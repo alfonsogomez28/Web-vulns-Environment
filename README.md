@@ -16,3 +16,4 @@ Both these ports can be changed by changing the yml file.
 <img src="ports.PNG" alt="ports" width="500"/></p>
 
 Once repo is cloned, go path and run `docker-compose up`
+<p> Note: Docker must be installed</p>
