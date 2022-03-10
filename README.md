@@ -1,10 +1,18 @@
 ## Web-vulns-Environment
-The docker-compose.yml file adds DVWA and BWapp instances to localhost for Web Pentesting
+The docker-compose.yml file adds DVWA and BWapp instances on localhost for Web Pentesting
 <hr>
-Pulls adn adds all necessary components to run DVWA and BWapp to localhost:
-
-- BWapp runs on localhost:10011
-- DVWA runs on localhost:10000
+Pulls and adds all necessary components to run DVWA and BWapp to localhost:
+<p><br>
+  <img src="bwapp.PNG" alt="bwapp" width="500"/></p>
+  <p><br>
+  <img src="dvwa.PNG" alt="dvwa" width="500"/></p>
+    <p>
+      - BWapp runs on localhost:10011</p>
+    <p>
+      - DVWA runs on localhost:10000</p>
 
 Both these ports can be changed by changing the yml file.
-![ports](ports.png)
+<p>
+<img src="ports.PNG" alt="ports" width="500"/></p>
+
+Once repo is cloned, go path and run `docker-compose up`
