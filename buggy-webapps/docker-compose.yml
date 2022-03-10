@@ -1,0 +1,27 @@
+version: "1.0"
+############################################################
+## Pulls Bwapp and DVWA vulnerable webapps from cyberxsecurity Docker repos for testing purposes
+## BWapp  runs on localhost:10011
+## DVWA runs on localhost:10000
+## Ports can be changed as needed
+## Use commands `docker-compose up` to start services and `docker-compose down` to stop
+############################################################
+services: 
+
+  bwapp:
+    container_name: bwapp
+    image: cyberxsecurity/bwapp
+    ports:
+      - 10011:80
+
+  dvwa:
+    container_name: dvwa
+    image: cyberxsecurity/dvwa
+    ports:
+      - 10000:80
+    volumes:
+      - ./:/home
+
+volumes: 
+  dvwa:
+  bricks:
